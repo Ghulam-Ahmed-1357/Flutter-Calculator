@@ -155,12 +155,13 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Expanded(
                 child: Container(
-                  height: 200,
+                  height: MediaQuery.of(context).size.height * 0.25,
                   padding: EdgeInsets.all(16.0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
